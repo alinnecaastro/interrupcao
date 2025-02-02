@@ -225,25 +225,11 @@
       "attrs": { "color": "green" }
     },
     {
-      "type": "wokwi-membrane-keypad",
-      "id": "keypad1",
-      "top": -318.8,
-      "left": 1128.8,
-      "attrs": {}
-    },
-    {
       "type": "wokwi-rgb-led",
       "id": "rgb26",
       "top": 71.2,
       "left": 788.3,
       "attrs": { "common": "cathode" }
-    },
-    {
-      "type": "wokwi-buzzer",
-      "id": "bz1",
-      "top": -276,
-      "left": 952.2,
-      "attrs": { "volume": "0.1" }
     },
     {
       "type": "wokwi-resistor",
@@ -330,20 +316,10 @@
     [ "rgb24:DOUT", "rgb25:DIN", "green", [ "v10.5", "h-58.4" ] ],
     [ "rgb25:VSS", "rgb24:VSS", "red", [ "v10.5", "h38.4" ] ],
     [ "rgb25:VDD", "pico:GND.3", "black", [ "h164.1", "h9.6", "v115.2" ] ],
-    [ "pico:GP18", "keypad1:R1", "violet", [ "h0" ] ],
-    [ "pico:GP19", "keypad1:R2", "violet", [ "h0" ] ],
-    [ "pico:GP20", "keypad1:R3", "violet", [ "h0" ] ],
-    [ "pico:GP4", "keypad1:R4", "violet", [ "h-9.6", "v153.6", "h307.4" ] ],
-    [ "pico:GP16", "keypad1:C1", "purple", [ "v9.64", "h240.41" ] ],
-    [ "pico:GP17", "keypad1:C2", "purple", [ "v38.44", "h249.91" ] ],
-    [ "pico:GP9", "keypad1:C3", "purple", [ "h-19.2", "v115.2", "h355.2" ] ],
-    [ "pico:GP8", "keypad1:C4", "purple", [ "h-28.8", "v134.4", "h364.8", "v-144" ] ],
     [ "pico:GND.8", "btn2:2.r", "black", [ "h0" ] ],
     [ "pico:GND.1", "btn1:2.r", "black", [ "h0" ] ],
     [ "pico:GP5", "btn1:1.l", "limegreen", [ "h-38.4", "v-96", "h-67.2", "v-48" ] ],
     [ "pico:GP6", "btn2:1.l", "cyan", [ "h-19.2", "v-57.6", "h-9.6", "v-19.2", "h19.2", "v-48" ] ],
-    [ "pico:GP21", "bz1:2", "yellow", [ "h19.51", "v-86.4", "h19.2", "v-76.8", "h-67.2" ] ],
-    [ "bz1:1", "pico:GND.8", "black", [ "v96", "h76.8", "v48" ] ],
     [ "rgb26:COM", "r1:1", "black", [ "v0" ] ],
     [ "r1:2", "pico:GND.4", "black", [ "h8.4", "v-48", "h21.6", "v-19.24" ] ],
     [ "pico:GP13", "rgb26:R", "orange", [ "h-48", "v0.04", "h-9.6", "v96", "h-105.6" ] ],
