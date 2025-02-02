@@ -2,8 +2,9 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "hardware/clocks.h"
+#include "ws2812.pio.h"
 
-#include "ws2818b.pio.h"
+
 
 #define LED_COUNT 25
 
@@ -38,7 +39,7 @@ uint sm;
 // Inicializa a máquina PIO
 void npInit(uint pin){
     // Cria programa PIO
-    uint offset = pio_add_program(pio0, &ws2818b_program);
+    uint offset = pio_add_program(pio0, &ws2812_program);
     np_pio = pio0;
 
     // Aloca uma máquina PIO
@@ -49,7 +50,7 @@ void npInit(uint pin){
     }
 
     // Inicializa o programa na máquina PIO
-    ws2818b_program_init(np_pio, sm, offset, pin);
+ws2812_program_init(np_pio, sm, offset, pin, 800000, false);
 
     // Limpa o buffer de LEDs
     for(uint i = 0; i < LED_COUNT; i++){

@@ -40,9 +40,8 @@ add_executable(interrupcao interrupcao.c )
 pico_set_program_name(interrupcao "interrupcao")
 pico_set_program_version(interrupcao "0.1")
         
-# Generate PIO header
-pico_generate_pio_header(interrupcao ${CMAKE_CURRENT_LIST_DIR}/ws2818b.pio)
-
+# # Generate PIO header
+pico_generate_pio_header(interrupcao ${CMAKE_CURRENT_LIST_DIR}/ws2812.pio)
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(interrupcao 1)
