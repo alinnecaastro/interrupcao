@@ -25,7 +25,10 @@ O projeto combina tanto aspectos de hardware quanto de software e busca explorar
  
 
 ## Video do funcionamento do projeto
-https://drive.google.com/file/d/1gyV28QzP4AzSEFn3hr6ChkRPSG7I0sTH/view?usp=sharing
+https://drive.google.com/file/d/1h-SXaPiWjhenzLS4zipx0Az__PxR48Ka/view?usp=sharing
+
+## Video do funcionamento no simulador dentro do vscode 
+https://drive.google.com/file/d/1ql-Yl0QTxUnORsTzU8mVOWEmsE5JO6Wi/view?usp=sharing
 
 ## Funcionalidades do Projeto
 ° O LED vermelho do LED RGB deve piscar continuamente 5 vezes por segundo.
