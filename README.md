@@ -24,4 +24,4 @@ Este projeto utiliza um Raspberry Pi Pico W na plataforma de apredizagem BitDogL
 
 ## Video do funcionamento do projeto
 [https://drive.google.com/file/d/1En1FajGNNJt90o80t0FL2H02QNDTWV8I/view?usp=sharing]
-(https://drive.google.com/file/d/1En1FajGNNJt90o80t0FL2H02QNDTWV8I/view?usp=sharing "https://drive.google.com/file/d/1En1FajGNNJt90o80t0FL2H02QNDTWV8I/view?usp=sharing")
+
