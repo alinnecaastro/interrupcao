@@ -15,7 +15,7 @@ int contador = 0; // Contador de 0 a 9
 void gpio_callback(uint gpio, uint32_t events) {
     uint64_t agora = time_us_64() / 1000; // Converte para ms
 
-//Verifica o tempo desde a ultima ativação é maio que o intervalo de debounce_delay_ms
+//Verifica se o tempo desde a ultima ativação é maior que o intervalo de debounce_delay_ms
     if (gpio == BUTTON_PIN_A && (agora - ultimo_botao_a) > DEBOUNCE_DELAY_MS) {
         flag_button_a = true;//flag para sinalizar pressionamento do botão a
         ultimo_botao_a = agora; //Atualiza o ultimo tmpo registrado do botao A com tempo atual

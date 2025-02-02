@@ -6,9 +6,9 @@
 #include "hardware/pwm.h"
 #include "pico/bootrom.h"
 #include "ws2812.pio.h"
-#include "numeros.c"//arquivos para implementação dos numeros
-#include "definicoes.h"//arquivos para variaveis globais
-#include "debounce.c"//arquivos para debounce
+#include "libs/numeros.c"//arquivos para implementação dos numeros
+#include "libs/definicoes.h"//arquivos para variaveis globais
+#include "libs/debounce.c"//arquivos para debounce
 
 //Função principal
 int main() {
