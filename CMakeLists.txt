@@ -23,7 +23,7 @@ if (EXISTS ${picoVscode})
     include(${picoVscode})
 endif()
 # ====================================================================================
-set(PICO_BOARD pico2 CACHE STRING "Board type")
+set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
@@ -39,6 +39,10 @@ add_executable(interrupcao interrupcao.c )
 
 pico_set_program_name(interrupcao "interrupcao")
 pico_set_program_version(interrupcao "0.1")
+        
+# Generate PIO header
+pico_generate_pio_header(interrupcao ${CMAKE_CURRENT_LIST_DIR}/ws2818b.pio)
+
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(interrupcao 1)
@@ -51,6 +55,11 @@ target_link_libraries(interrupcao
 # Add the standard include files to the build
 target_include_directories(interrupcao PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
+)# Add any user requested libraries
+target_link_libraries(interrupcao
+hardware_pio
+hardware_clocks
+hardware_pwm
 )
 
 pico_add_extra_outputs(interrupcao)
