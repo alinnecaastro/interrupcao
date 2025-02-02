@@ -6,4 +6,3 @@
 // Definição da quantidade de LEDs e o pino de controle
 #define LED_COUNT 25
 
-#define DEBOUNCE_DELAY 500 // Tempo de debounce em milissegundos
