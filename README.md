@@ -15,8 +15,6 @@
 - **wokwi.toml / wokwi-project.txt** → Arquivos de configuração para simulação no Wokwi.  
 - **ws2812.pio / ws2812.pio.h** → Código PIO para controle dos LEDs WS2812.  
 
-## Simulador online
-[https://wokwi.com/projects/421756301808734209](https://wokwi.com/projects/421756301808734209 "https://wokwi.com/projects/421756301808734209")
 
 ## Descrição Geral
 
